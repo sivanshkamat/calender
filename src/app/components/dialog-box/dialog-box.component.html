@@ -1,0 +1,25 @@
+<div style="height: 35vh;">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Enter Your title</mat-label>
+      <input matInput placeholder="" value="" [(ngModel)]="store.data.title" name="title" ngDefaultControl >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Enter your description</mat-label>
+      <textarea matInput placeholder="" [(ngModel)]="store.data.description" name="description" ngDefaultControl ></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Date</mat-label>
+      <input matInput readonly=""
+      [value]="(store.data.date)?.toDateString()" name="date" ngDefaultControl >
+      
+    </mat-form-field>
+    <div class="botton-container">
+
+      <button mat-flat-button color="primary" type="button" (click)="onClick()">Primary</button>
+    </div>
+
+  </form>
+
+</div>""
